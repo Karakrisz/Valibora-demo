@@ -1878,11 +1878,18 @@
       }
     }
     // KaraKrisz start
+    const mq = window.matchMedia("(min-width: 1200px)");
+    /* click event */
     $('#seller').click(function (event) {
       event.preventDefault();
     });
     $('#publisher').click(function (event) {
       event.preventDefault();
+    });
+    $('#more').click(function () {
+      event.preventDefault();
+      // $('#display_advance').toggle('1000');
+      $("i", this).toggleClass("fa-chevron-circle-down fa-chevron-circle-up");
     });
     /* FUNCTIONS call */
     logoAnimate();
@@ -1890,7 +1897,7 @@
     function logoAnimate() {
       $('#logo').data('size', 'big');
       $(window).scroll(function () {
-        if ($(document).scrollTop() > 100) {
+        if ($(document).scrollTop() > 100 && mq.matches) {
           $(".brand img").attr('src', 'images/logo/valdibora_logo_finish-01-small.png');
           if ($('#logo').data('size') == 'big') {
             $('#logo').data('size', 'small');
@@ -1915,7 +1922,6 @@
         }
       });
     };
-
     // KaraKrisz end
   });
 }());

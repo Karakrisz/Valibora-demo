@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="wide wow-animation" lang="en">
+<html class="wide wow-animation" lang="hu">
 
 <head>
   <title>Home</title>
@@ -11,6 +11,7 @@
   <!-- Stylesheets-->
   <link rel="stylesheet" type="text/css"
     href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900%7CRoboto:300,400,500,700,900">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/karakrisz.css">
@@ -169,8 +170,9 @@
                 <!-- RD Navbar Toggle-->
                 <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
                 <!-- RD Navbar Brand-->
-                <div class="karakrisz-navbar-brand" id="logo"><a class="brand" href="index.html"><img
-                      class="brand-logo-dark" src="images/logo/valdibora_logo_finish-01.png" alt="" /></a>
+                <div class="karakrisz-navbar-brand" id="logo"><a class="brand" href="index.html">
+                    <img class="brand-logo-dark" src="images/logo/valdibora_logo_finish-01.png" alt="logo" />
+                  </a>
                 </div>
               </div>
               <div class="rd-navbar-nav-wrap">
@@ -234,11 +236,11 @@
                 <h2>Eladó ingatlana van,vagy épp ingatlant keres?</h2>
                 <form class="rd-form">
                   <div class="row row-x-20 row-20">
-                    <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="col-md-3 col-sm-6 col-xs-12 kptb">
                       <button id="seller" name="seller" class="myButton button-primary-outline">Eladó</button>
                       <button id="publisher" name="publisher" class="myButton button-primary-outline">Kiadó</button>
                     </div>
-                    <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="col-md-3 col-sm-6 col-xs-12 kptb">
                       <div class="form-wrap form-wrap-validation">
                         <select class="form-input select-filter" name="search-property-location" data-style="modern"
                           data-class="select-dropdown-context-dark" data-placeholder="Település"
@@ -255,7 +257,7 @@
                         </select><span class="select-arrow"></span>
                       </div>
                     </div>
-                    <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="col-md-3 col-sm-6 col-xs-12 kptb">
                       <div class="form-wrap form-wrap-validation">
                         <select class="form-input select-filter" name="search-property-type" data-style="modern"
                           data-class="select-dropdown-context-dark" data-placeholder="Típus"
@@ -267,16 +269,15 @@
                         </select><span class="select-arrow"></span>
                       </div>
                     </div>
-                    <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="col-md-3 col-sm-6 col-xs-12 kptb">
                       <div class="form-wrap form-wrap-validation">
                         <fieldset>
                           <ul>
                             <label for="label1">Irányár</label>
                             <li class="fl">
                               <input type="text" id="min" name="min" placeholder="min" class="myInput" tabindex="10"
-                                autocomplete="off">-
+                                autocomplete="off"> <b>-</b>
                             </li>
-
                             <li class="fl">
                               <input type="text" id="max" name="max" placeholder="max" class="myInput kml-10"
                                 tabindex="20" autocomplete="off">
@@ -285,23 +286,68 @@
                         </fieldset>
                       </div>
                     </div>
-                    <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="col-md-3 col-sm-6 col-xs-12 kptb">
                       <div class="form-wrap form-wrap-validation">
-                        <select class="form-input select-filter" name="search-property-bedrooms" data-style="modern"
-                          data-class="select-dropdown-context-dark" data-placeholder="Min Beds"
+                        <fieldset>
+                          <ul>
+                            <label for="label1">Méret</label>
+                            <li class="fl">
+                              <input type="text" id="min" name="min" placeholder="min" class="myInput" tabindex="10"
+                                autocomplete="off"> <b>-</b>
+                            </li>
+                            <li class="fl">
+                              <input type="text" id="max" name="max" placeholder="max" class="myInput kml-10"
+                                tabindex="20" autocomplete="off"> <b>m2</b>
+                            </li>
+                          </ul>
+                        </fieldset>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 kptb">
+                      <div class="form-wrap form-wrap-validation">
+                        <select class="form-input select-filter" name="search-property-location" data-style="modern"
+                          data-class="select-dropdown-context-dark" data-placeholder="Terület, városrész"
                           data-minimum-results-for-search="Infinity" data-constraints="@Required">
                           <option label="placeholder"></option>
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
-                          <option value="6">6</option>
-                          <option value="7">7</option>
-                          <option value="8">8</option>
-                          <option value="9">9</option>
-                        </select>
+                          <option value="2">Alaska</option>
+                          <option value="3">Arizona</option>
+                          <option value="4">Arkansas</option>
+                          <option value="5">California</option>
+                          <option value="6">Colorado</option>
+                          <option value="7">Connecticut</option>
+                          <option value="8">Delaware</option>
+                          <option value="9">Florida</option>
+                        </select><span class="select-arrow"></span>
                       </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 kptb">
+                      <div class="form-wrap form-wrap-validation">
+                        <select class="form-input select-filter" name="search-property-location" data-style="modern"
+                          data-class="select-dropdown-context-dark" data-placeholder="Szobák száma"
+                          data-minimum-results-for-search="Infinity" data-constraints="@Required">
+                          <option label="placeholder"></option>
+                          <option value="2">Alaska</option>
+                          <option value="3">Arizona</option>
+                          <option value="4">Arkansas</option>
+                          <option value="5">California</option>
+                          <option value="6">Colorado</option>
+                          <option value="7">Connecticut</option>
+                          <option value="8">Delaware</option>
+                          <option value="9">Florida</option>
+                        </select><span class="select-arrow"></span>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 kptb">
+                      <div class="form-wrap form-wrap-validation">
+                        <button id="search" name="search" class="myButton myButtonSearch button-primary-outline">
+                          Keresés</button>
+                      </div>
+                    </div>
+                    <div class="col-md-12 col-sm-12 col-xs-12 iconContent">
+                      <button class="btn p-0" id="more">
+                        <i class="fa fa-chevron-circle-down" style="font-size:48px;color:#bc986b;"></i>
+                      </button>
+                      <b>További paraméterek</b>
                     </div>
                   </div>
                   <!-- 
@@ -845,25 +891,6 @@
                     <p>A MyHome salesperson is more than just a “sales person.” They act on your behalf as your agent,
                       providing you with advice and guidance and doing a job – helping you buy or sell a home. While it
                       is true they get paid for what they do, so do other professions that provide advice, guidance.</p>
-                  </div>
-                </div>
-              </article>
-              <!-- Bootstrap card-->
-              <article class="card card-custom card-corporate">
-                <div class="card-header" id="accordion1-heading-2" role="tab">
-                  <div class="card-title"><a class="card-link collapsed" role="button" data-toggle="collapse"
-                      href="#accordion1-collapse-2" aria-controls="accordion1-collapse-2"
-                      aria-expanded="false"><span>Should I talk with a bank before looking at homes?</span>
-                      <div class="card-arrow"></div>
-                    </a></div>
-                </div>
-                <div class="collapse" id="accordion1-collapse-2" role="tabpanel" aria-labelledby="accordion1-heading-2"
-                  data-parent="#accordion1">
-                  <div class="card-body">
-                    <p>The answer to the question is YES! There are tons of reasons why you should talk with a bank and
-                      get pre-approved before looking at homes. First and foremost, talking with a bank before looking
-                      at homes can help you understand exactly how much you can afford. There is no reason to look at
-                      homes that are listed for $250,000 if you can only afford up to $200,000.</p>
                   </div>
                 </div>
               </article>
